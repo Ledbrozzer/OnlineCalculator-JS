@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <script src="Main.js"></script>
+    <script src="App.js"></script>
+    <title>Calculator online</title>
+</head>
+<body>
+    <div class="container">
+        <div class="calculator">
+            <div class="display">
+                <div id="old-value"></div>
+                <div id="current-value"></div>
+            </div>
+            <button class="c" onclick="display.removeAll()">C</button>
+            <button onclick="display.delete()">&larr;</button>
+            <button class="math" value="division">%</button>
+            <button class="number">7</button>
+            <button class="number">8</button>
+            <button class="number">9</button>
+            <button class="math" value="multiplication">X</button>
+            <button class="number">4</button>
+            <button class="number">5</button>
+            <button class="number">6</button>
+            <button class="math" value="minus">-</button>
+            <!--Use 'value' and not 'id'
+            because we won't need t-innerHTML like the numbrs on those buttons
+            only t-type of operator wich is gonna be used
+            like is set on the 'main.js'-->
+            <button class="number">1</button>
+            <button class="number">2</button>
+            <button class="number">3</button>
+            <button class="math" value="sum">+</button>
+            <button class="c-number">0</button>
+            <button class="number">.</button>
+            <button class="math" value="equal">=</button>
+
+        </div>
+    </div>
+    <!--' defer ' => 'll delay an arquv to be linked/uploaded to the html: "<script src="script.js"></script defer>"-->
+    
+    <script src="script.js"></script>
+    <!--Calculator.js and Display.js have to be on the head of the document to function-->
+    
+    
+</body>
+</html>
